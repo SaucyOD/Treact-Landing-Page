@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project (Example Website)</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/4c2fbb47e8.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </head>
 
@@ -13,18 +14,18 @@
     <section id="landing">
         <nav>
             <div class="row nav__row">
-                <div class="nav__logo--wrapper">
-                    <img class="nav__logo--img" src="assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="Logo">
-                    <div class="nav__logo--title">Treact</div>
+                <div class="logo--wrapper">
+                    <img class="logo__img" src="assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="Logo">
+                    <div class="logo--title">Treact</div>
                 </div>
-                <div class="nav__links">
-                    <a href="#" class="nav__link">About</a>
-                    <a href="#" class="nav__link">Blog</a>
-                    <a href="#" class="nav__link">Pricing</a>
-                    <a href="#" class="nav__link">Contact Us</a>
-                    <a href="#" class="nav__link login">Login</a>
-                    <a href="#" class="nav__link nav__link--primary">Sign Up</a>
-                </div>
+                <ul class="nav__list">
+                    <li><a href="#" class="nav__link">About</a></li>
+                    <li><a href="#" class="nav__link">Blog</a></li>
+                    <li><a href="#" class="nav__link">Pricing</a></li>
+                    <li><a href="#" class="nav__link">Contact Us</a></li>
+                    <li><a href="#" class="nav__link login">Login</a></li>
+                    <li><a href="#" class="nav__link nav__link--primary">Sign Up</a></li>
+                </ul>
             </div>
         </nav>
         <div class="menu"></div>
@@ -36,11 +37,11 @@
                         <p class="header__description--para">Our templates are easy to setup, understand and customize.
                             Fully modular components with a variety of pages and components.</p>
                         <div class="header__email">
-                            <input type="text" class="header__email--input" placeholder="Your E-mail Address">
+                            <input type="email" class="header__email--input" placeholder="Your E-mail Address">
                             <button class="header__email--btn">Get Started</button>
                         </div>
-                        <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
-                        <img src="assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" class="header__customers">
+                        <p class="customers--title">OUR TRUSTED CUSTOMERS</p>
+                        <img src="assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" class="customers">
                     </div>
                     <figure class="header__img--wrapper">
                         <img src="assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
@@ -51,77 +52,89 @@
         </header>
     </section>
     <main>
-        <section id="features">
+        <section id="services">
             <div class="container">
-                <div class="features__row row__narrow">
+                <div class="row--narrow">
                     <h4 class="section__tag">FEATURES</h4>
                     <h2 class="section__title">We Have Amazing <span class="purple">Service.</span></h2>
                     <p class="section__para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem inventore
                         repellendus consectetur assumenda excepturi est!</p>
-                    <div class="features">
-                        <div class="feature">
-                            <div class="feature__row">
-                                <figure class="feature__img--wrapper">
-                                    <img src="assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" class="feature__img">
+                    <div class="services">
+                        <div class="service">
+                            <div class="service__row">
+                                <figure class="service__img--wrapper">
+                                    <img src="assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
+                                        class="service__img">
                                 </figure>
-                                <div class="feature__text">
-                                    <h2 class="feature__title">Secure</h2>
-                                    <p class="feature__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quod doloremque autem magnam.</p>
+                                <div class="service__text">
+                                    <h2 class="sub_title">Secure</h2>
+                                    <p class="sub__para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Eaque quod doloremque autem magnam.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="feature">
-                            <div class="feature__row">
-                                <figure class="feature__img--wrapper">
-                                    <img src="assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" class="feature__img">
+                        <div class="service">
+                            <div class="service__row">
+                                <figure class="service__img--wrapper">
+                                    <img src="assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg"
+                                        class="service__img">
                                 </figure>
-                                <div class="feature__text">
-                                    <h2 class="feature__title">24/7 Support</h2>
-                                    <p class="feature__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quod doloremque autem magnam.</p>
+                                <div class="service__text">
+                                    <h2 class="sub_title">24/7 Support</h2>
+                                    <p class="sub__para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Eaque quod doloremque autem magnam.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="feature">
-                            <div class="feature__row">
-                                <figure class="feature__img--wrapper">
-                                    <img src="assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" class="feature__img">
+                        <div class="service">
+                            <div class="service__row">
+                                <figure class="service__img--wrapper">
+                                    <img src="assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg"
+                                        class="service__img">
                                 </figure>
-                                <div class="feature__text">
-                                    <h2 class="feature__title">Customizable</h2>
-                                    <p class="feature__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quod doloremque autem magnam.</p>
+                                <div class="service__text">
+                                    <h2 class="sub_title">Customizable</h2>
+                                    <p class="sub__para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Eaque quod doloremque autem magnam.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="feature">
-                            <div class="feature__row">
-                                <figure class="feature__img--wrapper">
-                                    <img src="assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg" class="feature__img">
+                        <div class="service">
+                            <div class="service__row">
+                                <figure class="service__img--wrapper">
+                                    <img src="assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg"
+                                        class="service__img">
                                 </figure>
-                                <div class="feature__text">
-                                    <h2 class="feature__title">Reliable</h2>
-                                    <p class="feature__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quod doloremque autem magnam.</p>
+                                <div class="service__text">
+                                    <h2 class="sub_title">Reliable</h2>
+                                    <p class="sub__para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Eaque quod doloremque autem magnam.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="feature">
-                            <div class="feature__row">
-                                <figure class="feature__img--wrapper">
-                                    <img src="assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" class="feature__img">
+                        <div class="service">
+                            <div class="service__row">
+                                <figure class="service__img--wrapper">
+                                    <img src="assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg"
+                                        class="service__img">
                                 </figure>
-                                <div class="feature__text">
-                                    <h2 class="feature__title">Fast</h2>
-                                    <p class="feature__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quod doloremque autem magnam.</p>
+                                <div class="service__text">
+                                    <h2 class="sub_title">Fast</h2>
+                                    <p class="sub__para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Eaque quod doloremque autem magnam.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="feature">
-                            <div class="feature__row">
-                                <figure class="feature__img--wrapper">
-                                    <img src="assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg" class="feature__img">
+                        <div class="service">
+                            <div class="service__row">
+                                <figure class="service__img--wrapper">
+                                    <img src="assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg"
+                                        class="service__img">
                                 </figure>
-                                <div class="feature__text">
-                                    <h2 class="feature__title">Easy</h2>
-                                    <p class="feature__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quod doloremque autem magnam.</p>
+                                <div class="service__text">
+                                    <h2 class="sub_title">Easy</h2>
+                                    <p class="sub__para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Eaque quod doloremque autem magnam.</p>
                                 </div>
                             </div>
                         </div>
@@ -160,22 +173,24 @@
                             <div class="step">
                                 <div class="step__number">01</div>
                                 <div class="step__description">
-                                    <div class="step__title">Register</div>
-                                    <p class="step__para">Create an account with us using Google or Facebook.</p>
+                                    <div class="sub__title">Register</div>
+                                    <p class="sub__para">Create an account with us using Google or Facebook.</p>
                                 </div>
                             </div>
                             <div class="step">
                                 <div class="step__number">02</div>
                                 <div class="step__description">
-                                    <div class="step__title">Download</div>
-                                    <p class="step__para">Browse and Download the template that you like from the marketplace.</p>
+                                    <div class="sub__title">Download</div>
+                                    <p class="sub__para">Browse and Download the template that you like from the
+                                        marketplace.</p>
                                 </div>
                             </div>
                             <div class="step">
                                 <div class="step__number">03</div>
                                 <div class="step__description">
-                                    <div class="step__title">Run</div>
-                                    <p class="step__para">Follow the instructions to setup and customize the template to your needs.</p>
+                                    <div class="sub__title">Run</div>
+                                    <p class="sub__para">Follow the instructions to setup and customize the template to
+                                        your needs.</p>
                                 </div>
                             </div>
                         </div>
@@ -189,28 +204,33 @@
                     <div class="values__description">
                         <div class="section__tag">VALUES</div>
                         <h2 class="section__title">We Always Abide by Our <span class="purple">Principles.</span></h2>
-                        <div class="section__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, asperiores ab voluptate minima, omnis necessitatibus voluptates iste possimus voluptas, accusantium facilis. Aperiam quam velit consequuntur aspernatur, facere mollitia reprehenderit repudiandae.</div>
+                        <div class="section__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                            asperiores ab voluptate minima, omnis necessitatibus voluptates iste possimus voluptas,
+                            accusantium facilis. Aperiam quam velit consequuntur aspernatur, facere mollitia
+                            reprehenderit repudiandae.</div>
                         <div class="values__list">
                             <div class="value">
                                 <div class="value__title">
                                     <figure class="value__img--wrapper">
-                                        <img src="" alt="">
+                                        <i class="fa-solid fa-dollar-sign"></i>
                                     </figure>
-                                    <div class="value__name">Affordable</div>
+                                    <div class="sub__title">Affordable</div>
                                 </div>
-                                <div class="value__para">We promise to offer you the best rate we can - at par with the industry standard.</div>
+                                <div class="sub__para">We promise to offer you the best rate we can - at par with the
+                                    industry standard.</div>
                             </div>
                             <div class="value">
                                 <div class="value__title">
                                     <figure class="value__img--wrapper">
-                                        <img src="" alt="">
+                                        <i class="fa-solid fa-suitcase"></i>
                                     </figure>
-                                    <div class="value__name">Professionalism</div>
+                                    <div class="sub__title">Professionalism</div>
                                 </div>
-                                <div class="value__para">We assure you that our templates are designed and created by professional designers.</div>
+                                <div class="sub__para">We assure you that our templates are designed and created by
+                                    professional designers.</div>
                             </div>
-                            <button class="btn">Learn More</button>
                         </div>
+                        <button class="btn">Learn More</button>
                     </div>
                     <img src="assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg" class="values__img">
                 </div>
@@ -221,7 +241,8 @@
                 <div class="row">
                     <div class="section__tag">PRICING</div>
                     <h2 class="section__title">Reasonable & Flexible <span class="purple">Plans.</span></h2>
-                    <p class="section__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti perferendis aliquid alias aperiam quisquam. Voluptas!</p>
+                    <p class="section__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                        perferendis aliquid alias aperiam quisquam. Voluptas!</p>
                     <div class="plans">
                         <div class="plan">
                             <div class="plan__stripe"></div>
@@ -288,11 +309,21 @@
                     <div class="testimonials__description">
                         <div class="section__tag">TESTIMONIALS</div>
                         <h2 class="section__title">Our Clients <span class="purple">Love Us.</span></h2>
-                        <p class="section__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, ipsum. Quia enim numquam doloribus nobis exercitationem repellat sequi quaerat corporis.</p>
+                        <p class="section__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, ipsum. Quia
+                            enim numquam doloribus nobis exercitationem repellat sequi quaerat corporis.</p>
                         <div class="testimonial">
-                            <div class="testimonial__rating"></div>
+                            <div class="testimonial__rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half"></i>
+                            </div>
                             <h3 class="testimonial__title">Amazing User Experience</h3>
-                            <p class="testimonial__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, consequatur repudiandae dolorem aspernatur magni placeat? Dolorem quae pariatur iure error neque tempore doloribus debitis, dolorum impedit est aspernatur deleniti veniam.</p>
+                            <p class="testimonial__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+                                consequatur repudiandae dolorem aspernatur magni placeat? Dolorem quae pariatur iure
+                                error neque tempore doloribus debitis, dolorum impedit est aspernatur deleniti veniam.
+                            </p>
                             <div class="testimonial__bottom">
                                 <div class="testimonial__profile">
                                     <img src="assets/photo-1494790108377-be9c29b29330.avif" class="testimonial__img">
@@ -302,18 +333,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="start">
-            <div class="container">
-                <div class="row">
-                    <div class="start__container">
-                        <div class="start__row">
-                            <div class="start__title"></div>  
-                            <div class="start__buttons"></div>
                         </div>
                     </div>
                 </div>
