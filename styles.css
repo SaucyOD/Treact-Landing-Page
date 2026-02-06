@@ -311,7 +311,7 @@ header .row {
     height: 36px;
     width: auto;
     opacity: 0.6;
-    margin-top: 16px;
+    margin: 24px;
 }
 
 .customers--title {
@@ -500,13 +500,24 @@ VALUES
 
 .value__title {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    gap: 8px;
 }
 
 .value__img--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 24px;
     height: 24px;
+    border-radius: 50%;
+}
+
+.value:nth-child(1) .value__img--wrapper {
+    background-color: #9ae6b4;
+}
+
+.value:nth-child(2) .value__img--wrapper {
+    background-color: #feb2b2;
 }
 
 .value {
@@ -549,6 +560,27 @@ PLANS
     box-shadow: 0 10px 30px rgba(100, 21, 255, 0.08);
     position: relative;
     min-width: 280px;
+    overflow: hidden;
+}
+
+.plan--second {
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+
+.plan--second .plan__name,
+.plan--second .plan__price,
+.plan--second .plan__duration,
+.plan--second .plan__target,
+.plan--second .plan__feature {
+    color: white;
+}
+
+.plan--second .plan__middle {
+    border: 2px solid rgba(255,255,255,0.2);
+}
+
+.plan--second .plan__button {
+    color: #243e63;
 }
 
 .plan__stripe {
@@ -564,11 +596,6 @@ PLANS
     background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
 }
 
-.plan--second .plan__stripe,
-.plan--second .plan__button {
-    background: linear-gradient(115deg, #6415ff 0%, #a78bfa 100%);
-}
-
 .plan--third .plan__stripe,
 .plan--third .plan__button {
     background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
@@ -579,6 +606,7 @@ PLANS
     display: flex;
     flex-direction: column;
     text-align: center;
+    gap: 12px;
 }
 
 .plan__name {
@@ -607,7 +635,7 @@ PLANS
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 1;
+    border: 2px solid rgba(0, 0, 0, 0.05)
 }
 
 .plan__target {
@@ -625,7 +653,7 @@ PLANS
 }
 
 .plan__bottom {
-    padding: 0 24px 32px;
+    padding: 32px 24px;
 }
 
 .plan__button {
